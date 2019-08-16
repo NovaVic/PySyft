@@ -21,6 +21,8 @@ call_bob = ["python", "run_websocket_server.py", "--port", "8778", "--id", "bob"
 
 call_charlie = ["python", "run_websocket_server.py", "--port", "8779", "--id", "charlie"]
 
+call_testing = ["python", "run_websocket_server.py", "--port", "8780", "--id", "testing", "--testing"]
+
 print("Starting server for Alice")
 subprocess.Popen(call_alice)
 
@@ -29,3 +31,7 @@ subprocess.Popen(call_bob)
 
 print("Starting server for Charlie")
 subprocess.Popen(call_charlie)
+
+print("Starting server for testing")
+subprocess.Popen(call_testing)
+
